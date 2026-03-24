@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../services/db_service.dart';
+//import '../../services/db_service.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -16,9 +16,9 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void loadCards() async {
-    final data = await DBService().getCards();
+    //final data = await DBService().getCards();
     setState(() {
-      cards = data;
+   //   cards = data;
     });
   }
 

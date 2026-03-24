@@ -1,0 +1,20 @@
+name: loyalty_card_app
+description: A loyalty card storage app
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.0.15
+  mobile_scanner: ^3.5.5
+  barcode_widget: ^2.0.4
+  connectivity_plus: ^5.0.2
+  flutter_local_notifications: ^17.0.0
+
+flutter:
+  uses-material-design: true

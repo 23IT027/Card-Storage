@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../services/db_service.dart';
+//import 'package:loyalty_card_app/services/db_service.dart';
 import 'dart:math';
 
 class AddCardScreen extends StatefulWidget {
@@ -24,7 +24,7 @@ class _AddCardScreenState extends State<AddCardScreen> {
       'isSynced': false,
     };
 
-    await DBService().addCard(card);
+    //await DBService().addCard(card);
     Navigator.pop(context);
   }
 
@@ -36,9 +36,15 @@ class _AddCardScreenState extends State<AddCardScreen> {
         padding: EdgeInsets.all(16),
         child: Column(
           children: [
-            TextField(controller: nameController, decoration: InputDecoration(labelText: "Name")),
-            TextField(controller: numberController, decoration: InputDecoration(labelText: "Card Number")),
-            TextField(controller: expiryController, decoration: InputDecoration(labelText: "Expiry Date")),
+            TextField(
+                controller: nameController,
+                decoration: InputDecoration(labelText: "Name")),
+            TextField(
+                controller: numberController,
+                decoration: InputDecoration(labelText: "Card Number")),
+            TextField(
+                controller: expiryController,
+                decoration: InputDecoration(labelText: "Expiry Date")),
             SizedBox(height: 20),
             ElevatedButton(onPressed: saveCard, child: Text("Save"))
           ],
